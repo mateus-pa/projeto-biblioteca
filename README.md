@@ -10,7 +10,7 @@ Este projeto visa exercitar conceitos de Back-end como:
 ## Features
 - Rota get para listar livros e filtar por query params autor ou query params ano
 - Rota get para buscar livro por ID
-- Rota put para substituir livro (retorna apenas o ID sem alterações)
+- Rota put para substituir livro pelo ISBN (dentre as propriedades, apenas o ID é retornado sem alterações)
 - Rota post para adicionar novos livros ao bancodedados.js ou adicionar mais livros em estoque, caso o ISBN seja igual
 - Rota post utilizando o ISBN para buscar as informações necessárias para gerar o JSON do livro
 - Rota delete para remover livros do bancodedados.js ou retirar mais livros do estoque, caso o ISBN seja igual
@@ -40,4 +40,5 @@ npm run dev
 
 ## Rotas
 - [GET] /livros
-- [GET] /livros/{id}
+- [GET] /livros/:id
+- [PUT] /livros/:id

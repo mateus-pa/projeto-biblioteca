@@ -7,7 +7,6 @@ const livros = [
         ],
         editora: "Alta Books",
         ano: 2009,
-        numPaginas: 425,
         isbn: 8576082675,
         qtdEmEstoque: 1
     },
@@ -20,7 +19,6 @@ const livros = [
         ],
         editora: "Sextante",
         ano: 2019,
-        numPaginas: 256,
         isbn: 8543107164,
         qtdEmEstoque: 2
     },
@@ -32,7 +30,6 @@ const livros = [
         ],
         editora: "Alta Books",
         ano: 2019,
-        numPaginas: 432,
         isbn: 8550804606,
         qtdEmEstoque: 1
     }
