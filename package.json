@@ -1,0 +1,19 @@
+{
+  "name": "projeto-biblioteca",
+  "version": "1.0.0",
+  "description": "Projeto de uma biblioteca de livros utilizando conceitos de CRUD, API Rest e programação assíncrona",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js"
+  },
+  "keywords": [],
+  "author": "Mateus Pinheiro Conde de Almeida",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-isbn": "^1.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
