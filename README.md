@@ -1,6 +1,6 @@
 <p align="center"><b>Projeto API Biblioteca - Node.js</b></p>
 
-## About
+## Sobre
 Este projeto visa exercitar conceitos de Back-end como:
 - API Rest
 - Programação assíncrona
@@ -16,29 +16,29 @@ Este projeto visa exercitar conceitos de Back-end como:
 - Rota create utilizando o ISBN para buscar as informações necessárias para gerar o JSON do livro
 - Rota delete para remover livros do bancodedados.js ou retirar mais livros do estoque, caso o ISBN seja igual
 
-## Techs
+## Tecnologias
 - Javascript
 - Node.js
 - Express.js
 
-## Requirements
-- npm installed on your machine
-- node installed on your machine
+## Requisitos
+- npm instalado na sua máquina
+- node instalado na sua máquna
 
-## How to install
-- Clone this repository on any folder that you want
-- Open your terminal on the same folder and type...
+## Como instalar
+- Clone este repositório em qualquer pasta que desejar
+- Abra o seu terminal na mesma página criada e digite...
 ```
 npm install
 ```
 
-After a while, all dependencies for run this project will be installed
-- Now you just need to start a development server typing
+Após esperar um tempo, todas as dependências para rodar este server estarão instaladas
+- Agora você só precisa iniciar um server de desenvolvimento escrevendo
 ```
-npm start
+npm run dev
 ```
-**Remember, this project don't need an database.**
+**Lembre-se, este projeto não utiliza um banco de dados.**
 
-## Routes
+## Rotas
 - [GET] /livros
 - [GET] /livros/{id}
