@@ -23,10 +23,22 @@ const livros = [
         numPaginas: 256,
         isbn: 8543107164,
         qtdEmEstoque: 2
+    },
+    {
+        id: 3,
+        titulo: 'Arquitetura limpa: O guia do artesão para estrutura e design de software',
+        autores: [
+            'Robert Cecil Martin'
+        ],
+        editora: "Alta Books",
+        ano: 2019,
+        numPaginas: 432,
+        isbn: 8550804606,
+        qtdEmEstoque: 1
     }
 ];
 
-const identificadorLivro = 3;
+const identificadorLivro = 4;
 
 module.exports = {
     livros,
