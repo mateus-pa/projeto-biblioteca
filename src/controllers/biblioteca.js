@@ -10,7 +10,7 @@ const listarLivros = async function (req, res) {
             return res.status(400).json({ mensagem: 'O valor do parâmetro autor da URL não pode ser um número.' });
         }
 
-        const livrosEncontrados = livros.filter(await function (livroBuscado) {
+        const livrosEncontrados = livros.filter(function (livroBuscado) {
             const autorEncontrado = livroBuscado.autores.some(function (autorBuscado) {
                 return autorBuscado === autor;
             });
@@ -27,7 +27,7 @@ const listarLivros = async function (req, res) {
             return res.status(400).json({ mensagem: 'O valor do parâmetro ano da URL não é um número válido.' });
         }
 
-        const livrosEncontrados = livros.filter(await function (livroBuscado) {
+        const livrosEncontrados = livros.filter(function (livroBuscado) {
             return livroBuscado.ano === parseInt(ano);
         });
 
@@ -45,7 +45,7 @@ const buscarLivroPorId = async function (req, res) {
         return res.status(400).json({ mensagem: 'O valor do parâmetro ID da URL não é um número válido.' });
     }
 
-    const livroBuscado = livros.find(await function (livro) {
+    const livroBuscado = livros.find(function (livro) {
         return livro.id === parseInt(id);
     });
 
@@ -74,7 +74,7 @@ const substituirLivro = async function (req, res) {
     }
 
     // verifica se existe livro com o respectivo ID
-    let livroBuscado = livros.find(await function (livro) {
+    let livroBuscado = livros.find(function (livro) {
         return livro.id === parseInt(id);
     });
 
@@ -83,7 +83,7 @@ const substituirLivro = async function (req, res) {
     }
 
     // buscar dados livro pelo ISBN
-    isbnLibrary.resolve(isbn, await function (err, book) {
+    isbnLibrary.resolve(isbn, function (err, book) {
         if (err) {
             return res.status(404).json({ mensagem: 'ISBN inválido! Não existe livro correspondente a este ISBN.' });
         }
